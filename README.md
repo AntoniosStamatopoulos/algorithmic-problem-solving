@@ -50,3 +50,29 @@ Solves a shortest-path optimization problem on graphs with **directed and undire
 
 **Use Case:**  
 Applicable to routing, transportation networks, and time-critical systems where optimal path computation is required.
+
+
+
+------------
+#### Graph.java
+**Role:** Graph representation for constrained reachability problems
+
+**Description:**  
+Implements an undirected graph that models a **city–road network**, where nodes represent cities and edges represent bidirectional roads.  
+The graph is designed to support **reachability analysis under node-blocking constraints**, enabling traversal algorithms to compute the maximum number of accessible nodes from a given starting point.
+
+**Problem Context:**  
+Certain nodes are marked as *blocked*, meaning that once such a node is reached, traversal cannot continue beyond it.  
+This behavior is essential for accurately modeling real-world infrastructure constraints, such as restricted access points in water distribution or transportation networks.
+
+**Responsibilities:**
+- Represent city connectivity using an adjacency list
+- Support efficient BFS-based traversal
+- Enable constraint-aware exploration of the graph
+- Serve as the structural backbone for reachability computation
+
+**Design Notes:**
+- Optimized for tree graphs (N nodes, N−1 edges)
+- Clean separation between graph structure and traversal logic
+- Easily extensible to other constraint-based graph problems
+
