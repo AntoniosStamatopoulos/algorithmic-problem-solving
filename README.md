@@ -19,38 +19,34 @@ Computes the longest common prefix among a list of strings using a divide-and-co
 - Time complexity optimization
 
 
-2. Graph Reachability with Constraints
+### 2. Graph Reachability with Constraints
+**Directory:** `graph-reachability-with-constraints/`  
+**Core file:** `Graph.java`
 
-Directory: graph-reachability-with-constraints/
-Core files: Graph.java, traversal logic
+**Description:**  
+Computes the maximum number of reachable nodes in an undirected tree graph using **Breadth-First Search (BFS)**, under the constraint that certain nodes are blocked and cannot be traversed further.
 
-Description:
-Determines the maximum number of reachable nodes in an undirected tree graph using BFS, under the constraint that certain nodes are blocked and cannot be traversed further.
+**Key Concepts:**
+- Graph traversal (BFS)
+- Adjacency list representation
+- Tree graphs
+- Constraint-aware reachability
 
-Key Concepts:
+**Real-World Motivation:**  
+This problem models infrastructure scenarios such as **water distribution networks**, where traversal is restricted through specific nodes due to failures or access limitations.
 
-Graph traversal (BFS)
 
-Adjacency list representation
+### 3. Shortest Path Graph Optimization
+**File:** `graph-shortest-path-optimization.py`
 
-Reachability under constraints
+**Description:**  
+Solves a shortest-path optimization problem on graphs with **directed and undirected edges**, computing the minimum traversal time required to reach a central node from all other nodes.
 
-Tree graphs
+**Key Concepts:**
+- Shortest path algorithms
+- Weighted graphs
+- Graph optimization
+- Directed and undirected edges
 
-Real-World Motivation:
-Models infrastructure problems such as water distribution networks or restricted network coverage.
-
-3. Shortest Path Graph Optimization
-
-File: graph-shortest-path-optimization.py
-
-Description:
-Solves a shortest-path optimization problem on graphs with directed and undirected edges and weighted traversal times.
-
-Key Concepts:
-
-Shortest path algorithms
-
-Graph optimization
-
-Weighted graphs
+**Use Case:**  
+Applicable to routing, transportation networks, and time-critical systems where optimal path computation is required.
