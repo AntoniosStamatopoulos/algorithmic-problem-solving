@@ -5,7 +5,7 @@ The projects demonstrate clean code structure, fundamental computer science conc
 
 ---
 
-## 📌 Included Projects
+##  Included Projects
 
 ### 1. Longest Common Prefix
 **File:** `longest-common-prefix.java`
